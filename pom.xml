@@ -10,7 +10,7 @@
 	<groupId>guru.springframework</groupId>
 	<artifactId>sft-pet-clinic</artifactId>
 	<packaging>pom</packaging>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 
 	<modules>
 		<module>pet-clinic-data</module>
@@ -42,7 +42,7 @@
 		</plugins>
 	</build>
 	
-	<scm><developerConnection>scm:git:https://github.com/9Sefa9/sft-pet-clinic.git</developerConnection>  <tag>sft-pet-clinic-0.0.1</tag>
+	<scm><developerConnection>scm:git:https://github.com/9Sefa9/sft-pet-clinic.git</developerConnection>  <tag>HEAD</tag>
   </scm>
 
 
