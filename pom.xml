@@ -34,16 +34,19 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
 				<configuration>
-				<goals>
+					<goals>
 				install
 				</goals>
+				<autoVersionSubmodules>true </autoVersionSubmodules>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-	
-	<scm><developerConnection>scm:git:https://github.com/9Sefa9/sft-pet-clinic.git</developerConnection>  <tag>HEAD</tag>
-  </scm>
+
+	<scm>
+		<developerConnection>scm:git:https://github.com/9Sefa9/sft-pet-clinic.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
 
 
 </project>

@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Build-Jdk-Spec: 17
 Implementation-Title: pet-clinic-data
-Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Version: 0.0.2-SNAPSHOT
 Main-Class: guru.springframework.sftpetclinic.SfgPetClinicApplication
 Created-By: Maven Integration for Eclipse
 
