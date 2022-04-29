@@ -4,8 +4,9 @@ import java.util.Set;
 
 import guru.springframework.sftpetclinic.model.Vet;
 import guru.springframework.sftpetclinic.services.CrudService;
+import guru.springframework.sftpetclinic.services.VetService;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long>{
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService{
 
 	@Override
 	public Vet findById(Long id){
