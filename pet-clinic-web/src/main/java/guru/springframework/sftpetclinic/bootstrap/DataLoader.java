@@ -1,5 +1,6 @@
 package guru.springframework.sftpetclinic.bootstrap;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -16,10 +17,13 @@ public class DataLoader implements CommandLineRunner{
 	private final OwnerService ownerService;
 	private final VetService vetService;
 	
-	public DataLoader() {
+	@Autowired
+	public DataLoader(OwnerService ownerService, VetService vetService) {
 		
-		ownerService = new OwnerServiceMap();
-		vetService = new VetServiceMap();
+		this.ownerService = ownerService;
+		this.vetService = vetService;
+		//ownerService = new OwnerServiceMap();
+		//vetService = new VetServiceMap();
 	}
 	@Override
 	public void run(String... args) throws Exception {
