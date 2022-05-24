@@ -6,12 +6,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class IndexController {
-	
+
 	public IndexController() {
-		String a[] = {"1","2","3"};
+		String a[] = { "1", "2", "3" };
 	}
-	@RequestMapping(path = {"","/","index","index.html"},method = RequestMethod.GET)
+
+	@RequestMapping(path = { "", "/", "index", "index.html" }, method = RequestMethod.GET)
 	public String index() {
 		return "index";
 	}
+
+	@RequestMapping(path = { "/oups", "/oups/index.html" }, method = RequestMethod.GET)
+	public String oupsHandler() {
+		return "oups";
+	}
+
 }
